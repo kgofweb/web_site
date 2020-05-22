@@ -1,0 +1,290 @@
+:root {
+        --primary-color : #F95D5E;
+        --second-color : #000;
+}
+
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat';
+}
+
+body {
+        line-height: 1.5;
+}
+
+/* GENERAL */
+.container {
+        width: 95%;
+        margin: auto;
+}
+
+.option-container {
+        width: 80%;
+        margin: auto;
+}
+
+li {
+        list-style: none;
+}
+
+a {
+        text-decoration: none;
+}
+
+i {
+        color: #F95D5E;
+}
+
+/* SHOWCASE */
+.main-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 8vh;
+}
+
+.logo {
+        flex: 1;
+        color: #000;
+        font-size: 1.1rem;
+}
+
+.logo span.trav {
+        color: #F95D5E;
+        font-weight: 700;
+}
+
+.main-nav {
+        flex: .7;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.main-nav li a {
+        color: #000;
+        font-weight: 500;
+}
+
+.main-nav a {
+        font-size: .9rem;
+}
+
+/* BANNER */
+.banner {
+        position: relative;
+}
+
+.banner img {
+        width: 100%;
+}
+
+.banner-content {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+}
+
+.banner-content h3 {
+        color: #FFF;
+        font-size: 5.3rem;
+        font-weight: bold;
+}
+
+.banner-content p {
+        color: #FFF;
+        font-weight: 600;
+        font-size: 1.1rem;
+        cursor: pointer;
+}
+
+.banner-content i {
+        color: #FFF !important;
+        font-size: 1.4rem;
+        cursor: pointer;
+}
+
+/* TAB-BTN */
+.tabs {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+}
+.tab-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.tab-1, .tab-2, .tab-3 {
+        flex: 1;
+}
+
+.tab-1 span.tab-text-2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+}
+
+.tab-1 span.tab-text-1, .tab-1 span.tab-text-3 {
+        font-size: .9rem;
+        font-weight: 500;
+}
+
+.tab-2 {
+        text-align: center;
+}
+
+.tab-2 button {
+        width: 15rem;
+        height: 3rem;
+        background: var(--primary-color);
+        border: none;
+        outline: none;
+        border-radius: .3rem;
+        color: #FFF;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: 500;
+        transition: .5s;
+}
+
+.tab-2 button:hover {
+        box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.5);
+        transform: scale(1.1);
+}
+
+.tab-3 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+}
+
+.tab-3 p {
+        margin-right: 2rem;
+        border: 1px solid #F3F3F3;
+        background: #F3F3F3;
+        border-radius: 10px;
+        width: 10rem;
+        text-align: center;
+        padding: .3rem;
+        font-size: 0.8rem;
+}
+
+.tab-3 img {
+        border-radius: 50%;
+        height: 8vh;
+}
+
+/* SECTION OPTION */
+.option {
+        background: #F8F8F8;
+        text-align: center;
+        margin-bottom: 2rem;
+}
+
+.option-content {
+        padding-top: 5.5rem;
+        padding-bottom: 1.9rem;
+}
+
+.option-content h1 {
+        font-size: 2.5rem;
+}
+
+.option-content p {
+        width: 40%;
+        margin: auto;
+        font-size: .8rem;
+        margin-top: 1.5rem;
+}
+
+.option-content-body {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding-bottom: 1.8rem;
+        margin-top: 5.5rem;
+        margin-bottom: 5.5rem;
+}
+
+.option-content-body i {
+        font-size: 2.8rem;
+        margin-bottom: 1rem;
+}
+
+.option-content-body div {
+        text-align: center;
+        cursor: pointer;
+}
+
+.option-content-body p {
+        text-align: center;
+        width: 45%;
+        margin: auto;
+        font-size: .8rem;
+        font-weight: 600;
+}
+
+.tab-text {
+        font-size: .9rem;
+        font-weight: 500;
+}
+
+.tab-content-footer {
+        font-size: .9rem;
+        padding-top: 1rem;
+        padding-bottom: 1.8rem;
+}
+
+.tab-content-footer span {
+        color: #F95D5E;
+        font-weight: 500;
+}
+
+/* SECTION EMAIL */
+.email {
+        margin-bottom: 1rem;
+        text-align: center;
+}
+
+.input-email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+}
+
+.text-email {
+        width: 15rem;
+        height: 2.5rem;
+        border-radius: 50px 0px 0px 50px;
+        border: none;
+        outline: none;
+        background: #EBEBEB;
+        padding-left: 1rem;
+}
+
+.send {
+        width: 5rem;
+        height: 2.5rem;
+        border-radius: 0px 50px 50px 0px;
+        background: var(--primary-color);
+        cursor: pointer;
+}
+
+.send p {
+        line-height: 2.5rem;
+        color: #FFF;
+        font-weight: 500;
+}
+
+/* FOOTER */
+.footer {
+        font-size: .7rem;
+        margin-top: 1rem;
+}
+   
+
+
